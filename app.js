@@ -5,5 +5,6 @@ const main = document.querySelector('main');
 
 for (let animal of animals) {
     const animalDiv = renderListItem(animal);
+
     main.append(animalDiv);
 }
