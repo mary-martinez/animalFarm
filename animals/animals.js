@@ -11,6 +11,7 @@ const params = new URLSearchParams(window.location.search);
 
 const animalSelected = findById(params.get('id'), animals);
 const typeOfAnimal = animalSelected.type;
+animalImage.src = `../assets/${typeOfAnimal}.svg`;
 
 animalName.textContent = `${animalSelected.name}`;
 animalType.textContent = `Classification: ${typeOfAnimal.toUpperCase()} `;
